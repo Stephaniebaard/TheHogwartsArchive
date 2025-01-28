@@ -25,6 +25,4 @@ export type Character = {
     image: string;
   }
 
-  export type CharacterCategories = `students` | `staff`;
-
-  export type Houses = `gryffindor` | `hufflepuff` | `ravenclaw` | `slytherin`;
+  export type Houses = 'gryffindor' | 'hufflepuff' | 'ravenclaw' | 'slytherin';
