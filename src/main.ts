@@ -34,7 +34,7 @@ const DOMCharactersInaHouse = async (house: Houses) => {
     allCharactersInaHouseArticle.innerHTML = '';
 
     const h2 = document.createElement("h2") as HTMLElement;
-    h2.innerHTML = `Characters in ${house}:`;
+    h2.innerHTML = `${house}`;
     allCharactersInaHouseArticle.appendChild(h2);
 
     for (let i = 0; i < characters.length; i++)
@@ -57,6 +57,24 @@ houseButtons.forEach(button => {
     buttonElement.addEventListener("click",()=>{
         DOMCharactersInaHouse(button.house);
     });
+});
+
+// Funktion som ändrar dikt beroende på vilket hus man klickar på
+const buttons = document.querySelectorAll('button');
+const housePoem = document.getElementById('house-poem') as HTMLParagraphElement;
+const poems = [
+    "You might belong in Gryffindor, where dwell the brave at heart, their daring, nerve and chivalry set Gryffindors apart.",
+    "You might belong in Hufflepuff where they are just and loyal, those patient Hufflepuffs are true, and unafraid of toil.",
+    "Or yet in wise old Ravenclaw, if you've a ready mind, where those of wit and learning, will always find their kind.",
+    "Or perhaps in Slytherin, you'll make your real friends, those cunning folk use any means, to achieve their ends."
+];
+
+function changePoem(index: number){
+    housePoem.textContent = poems[index];
+}
+
+buttons.forEach((button, index)=>{
+    button.addEventListener('click', ()=> changePoem(index));
 });
 
 // Funktion för att visa karaktärens information
