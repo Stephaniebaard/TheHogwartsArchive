@@ -1,0 +1,22 @@
+@use '../styles/mixins.scss';
+
+header
+{
+    background: linear-gradient(to bottom right, rgb(27,36,55), rgb(66,78,107));
+    display: flex;
+    max-height: 150px;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgb(27, 36, 58);
+    h1 
+{
+font-size: 48px;
+@include mixins.yellow-text
+}
+}
+
+.Hogwarts-icon
+{
+  width: 250px;
+  height: 350px;
+}
+

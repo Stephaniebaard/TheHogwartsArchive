@@ -1,0 +1,22 @@
+@mixin buttons
+{
+    cursor: pointer;
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 5px rgb(27, 36, 58);
+}
+
+@mixin yellow-text
+{
+color:rgb(193, 175, 84, 1);
+font-weight: bold;
+-webkit-text-stroke: 3px rgba(157, 103, 19, 1);
+}
+
+@mixin white-text
+{
+    color: white;
+    font-size: 15px;
+}

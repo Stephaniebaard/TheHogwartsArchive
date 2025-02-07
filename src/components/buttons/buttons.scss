@@ -1,0 +1,25 @@
+@use '../../styles/mixins.scss';
+
+#show-gryffindor
+{
+    background-image: url('./resources/GryffindorButton.png'); 
+    @include mixins.buttons;
+}
+
+#show-hufflepuff
+{
+    background-image: url('./resources/HufflepuffButton.png'); 
+    @include mixins.buttons;
+}
+
+#show-ravenclaw
+{
+    background-image: url('./resources/RavenclawButton.png');
+    @include mixins.buttons;
+}
+
+#show-slytherin
+{
+    background-image: url('./resources/SlytherinButton.png');
+    @include mixins.buttons;
+}

@@ -1,0 +1,35 @@
+@use '../../styles/mixins.scss';
+#characters-in-house
+{
+    @include mixins.white-text;
+    box-shadow: 5px 5px 5px rgb(27, 36, 58);
+    width: 280px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#house-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#house-poem
+{
+    @include mixins.white-text;
+    width: 280px;
+    height: 280px;
+}
+
+.card-content
+{
+    display: flex;
+    gap: 2rem;
+    @include mixins.white-text;
+
+}
+
+
+

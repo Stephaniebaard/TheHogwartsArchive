@@ -5,25 +5,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Hogwarts Archive</title>
-    <h1>The Hogwarts Archive</h1>
   </head>
   <body>
+    <header>
+      <img src="./resources/Hogwartsicon.png" class="Hogwarts-icon">
+      <h1>The Hogwarts Archive</h1>
+      
+    </header>
   <main>
-    <button id="show-gryffindor">Gryffindor</button>
-    <button id="show-hufflepuff">Hufflepuff</button>
-    <button id="show-ravenclaw">Ravenclaw</button>
-    <button id="show-slytherin">Slytherin</button>
-    <p id = "house-poem"></p>
+    <button id="show-gryffindor"></button>
+    <button id="show-hufflepuff"></button>
+    <button id="show-ravenclaw"></button>
+    <button id="show-slytherin"></button>
+   
 
-    <article id="characters-in-house"></article> 
+    <article id="characters-in-house" >
+      <img id="house-image" src="" alt="House Image">
+      <p id = "house-poem"></p>
+    </article> 
+    
     <article id="character-card" class="card">
       <section class="card-content">
         <span class ="close-button" id="close-card">&times;</span>
-        <div class="profile-icon"></div>
+        <p id="profile-icon" style="display: none;">👤</p>
         <h2 id="character-name"></h2>
         <p id="character-info"></p>
       </section>
     </article>
+  
 
   </main>
     <script type="module" src="/src/main.ts"></script>
